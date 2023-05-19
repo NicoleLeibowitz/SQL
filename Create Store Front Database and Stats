@@ -1,0 +1,23 @@
+CREATE TABLE Bewitched_Books (id INTEGER PRIMARY KEY, title TEXT, author TEXT, publisher TEXT, year INTEGER, cost INTEGER, quantity INTEGER);
+
+INSERT INTO Bewitched_Books VALUES (1, "The Shining", "Stephen King", "DoubleDay", 1977, 19, 42);
+INSERT INTO Bewitched_Books VALUES (2, "Penpal", "Dathan Auerbach", "Self-published", 2012, 17, 36);
+INSERT INTO Bewitched_Books VALUES (3, "Pretty Girls", "Karin Slaughter", "William Morrow Paperbacks", 2016, 14, 23);
+INSERT INTO Bewitched_Books VALUES (4, "Mary", "Nat Kassidy", "Macmillan", 2022, 17, 19);
+INSERT INTO Bewitched_Books VALUES (5, "Don't Look Back", "Ben Cheetham", "Dreamscape Media, LLC", 2022, 8, 7);
+INSERT INTO Bewitched_Books VALUES (6, "The Deep", "Nick Cutter", "Gallery Books", 2016, 18, 57);
+INSERT INTO Bewitched_Books VALUES (7, "Things Have Gotten Worse Since We Last Spoke", "Eric LaRocca", "Fireside Horror", 2021, 99, 11);
+INSERT INTO Bewitched_Books VALUES (8, "Tender is the Flesh", "Augustina Bazterrica", "Simon & Schuster", 2020, 13, 56);
+INSERT INTO Bewitched_Books VALUES (9, "The Southern Bookclub's Guide to Slaying Vampires", "Grady Hendrix", "Quirk Books", 2021, 13, 17);
+INSERT INTO Bewitched_Books VALUES (10, "The Thing Between Us", "Gus Moreno", "MCD x FSG Originals", 2021, 11, 26);
+INSERT INTO Bewitched_Books VALUES (11, "Mexican Gothic", "Silvia Moreno-Garcia", "Random House Worlds", 2021, 14, 31);
+INSERT INTO Bewitched_Books VALUES (12, "The Hacienda", "Isabel Canas", "Penguin Publishing Group", 2022, 21, 16);
+INSERT INTO Bewitched_Books VALUES (13, "A Head Full of Ghosts", "Paul Tremblay", "William Morror", 2015, 4, 29);
+INSERT INTO Bewitched_Books VALUES (14, "Fantastic Land", "Mike Bockoven", "Skyhorse; Reprint edition", 2018, 15, 76);
+INSERT INTO Bewitched_Books VALUES (15, "Seed", "Ania Ahlborn", "47North", 2012, 10, 47);
+
+SELECT * FROM Bewitched_Books;
+
+SELECT * FROM Bewitched_Books WHERE year < 2021 ORDER BY year;
+
+SELECT SUM(cost) FROM Bewitched_Books WHERE cost > 16 ORDER BY cost;
